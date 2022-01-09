@@ -9,29 +9,28 @@
   position: absolute;
   left: 0;
   top: 0;
-  padding: 40px 20px;
-
+  padding: 40px 30px;
 
   #menu {
     color: white;
-    padding: 0;
-    padding-left: 30px;
     height: 100%;
 
     ul {
       list-style-type: none;
-      margin-top: 100px;
+      margin-top: 55%;
     }
 
-    li p {
-        padding: 10px 0;
-        font-size: 24px;
-        letter-spacing: 2px;
-        text-transform: uppercase;
-        font-weight: lighter;
+    li {
+      padding: 15px 0;
+      font-size: 24px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      font-weight: lighter;
+
+      a {
+        color: white;
+        text-decoration: none;
       }
+    }
   }
-
-  
-
 }

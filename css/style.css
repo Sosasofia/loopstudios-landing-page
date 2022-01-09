@@ -10,24 +10,26 @@
   position: absolute;
   left: 0;
   top: 0;
-  padding: 40px 20px;
+  padding: 40px 30px;
 }
 .open-modal #menu {
   color: white;
-  padding: 0;
-  padding-left: 30px;
   height: 100%;
 }
 .open-modal #menu ul {
   list-style-type: none;
-  margin-top: 100px;
+  margin-top: 55%;
 }
-.open-modal #menu li p {
-  padding: 10px 0;
+.open-modal #menu li {
+  padding: 15px 0;
   font-size: 24px;
   letter-spacing: 2px;
   text-transform: uppercase;
   font-weight: lighter;
+}
+.open-modal #menu li a {
+  color: white;
+  text-decoration: none;
 }
 
 * {
@@ -45,13 +47,13 @@ header {
   min-height: 650px;
   background-image: url("../images/mobile/image-hero.jpg");
   background-size: cover;
-  padding: 40px 20px;
+  padding: 40px 30px;
 }
 header #icon-hamburger {
   position: absolute;
   top: 0;
   right: 0;
-  margin: 45px 25px;
+  margin: 40px 25px;
 }
 header .title {
   border: 2px solid white;
