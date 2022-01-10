@@ -21,7 +21,8 @@
     }
 
     li {
-      padding: 15px 0;
+      padding: 10px 0;
+      margin: 10px 0;
       font-size: 24px;
       letter-spacing: 2px;
       text-transform: uppercase;
@@ -30,6 +31,24 @@
       a {
         color: white;
         text-decoration: none;
+        position: relative;
+
+        &:after {
+          position: absolute;
+          content: "";
+          height: 2px;
+          bottom: -4px; 
+          margin: 0 auto;
+          left: 0;
+          width: 0;
+          background: none;
+          transition: width 0.2s ease;
+        }
+
+        &:hover:after {
+          background: white;
+          width: 100%;
+        }
       }
     }
   }

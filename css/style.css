@@ -21,7 +21,8 @@
   margin-top: 55%;
 }
 .open-modal #menu li {
-  padding: 15px 0;
+  padding: 10px 0;
+  margin: 10px 0;
   font-size: 24px;
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -30,6 +31,22 @@
 .open-modal #menu li a {
   color: white;
   text-decoration: none;
+  position: relative;
+}
+.open-modal #menu li a:after {
+  position: absolute;
+  content: "";
+  height: 2px;
+  bottom: -4px;
+  margin: 0 auto;
+  left: 0;
+  width: 0;
+  background: none;
+  transition: width 0.2s ease;
+}
+.open-modal #menu li a:hover:after {
+  background: white;
+  width: 100%;
 }
 
 * {
@@ -124,6 +141,11 @@ header .title p {
   bottom: 0;
   letter-spacing: 1px;
 }
+.creations-gallery .creations-item:hover {
+  color: #000000;
+  transform: scale(0.98);
+  transition: transform 0.5s;
+}
 .creations-gallery a {
   text-align: center;
   padding: 15px;
@@ -213,39 +235,6 @@ footer p {
     padding: 40px;
   }
 
-  /*
-  .interactive {
-    height: 650px;
-    padding: 100px 150px;
-    position: relative;
-
-    img {
-      width: 65%;
-      max-height: 450px;
-    }
-
-    .interactive-text {
-      text-align: left;
-      position: absolute;
-      width: 40%;
-      right: 0;
-      bottom: 0;
-      background-color: white ;
-      padding: 100px 0 0 100px;
-      margin: 150px;
-
-      h2 {
-        font-size: 3em;
-        font-weight: 400;
-      }
-
-      p {
-        margin: 0;
-        margin-top: 25px;
-      }
-    }
-  }
-  */
   .interactive {
     height: 650px;
     margin: 50px 150px;
