@@ -64,7 +64,6 @@ header .title p {
   color: white;
   font-size: 2.25em;
   text-transform: uppercase;
-  word-spacing: 30px;
   letter-spacing: 2.5px;
 }
 
@@ -82,7 +81,6 @@ header .title p {
   font-size: 32px;
   color: rgba(0, 0, 0, 0.746);
   text-transform: uppercase;
-  margin-bottom: -25px;
 }
 .interactive p {
   line-height: 1.5;
@@ -167,6 +165,176 @@ footer p {
   color: #8c8c8c;
   font-size: 1.2em;
   margin: 15px;
+}
+
+.desktop-img {
+  display: none;
+}
+
+@media screen and (min-width: 800px) {
+  header {
+    background-image: url("../images/desktop/image-hero.jpg");
+    background-position: center center;
+    padding: 80px 150px;
+  }
+  header #icon-hamburger {
+    display: none;
+  }
+  header .nav-bar {
+    position: relative;
+    top: 0;
+    display: flex;
+  }
+  header .nav-bar .logo {
+    cursor: pointer;
+    margin-right: auto;
+  }
+  header .nav-bar nav {
+    display: block;
+  }
+  header .nav-bar nav ul {
+    list-style: none;
+  }
+  header .nav-bar nav li {
+    display: inline-block;
+    padding: 0px 15px;
+  }
+  header .nav-bar nav a {
+    color: white;
+  }
+  header .nav-bar nav a:link {
+    text-decoration: none;
+  }
+  header .title {
+    margin: 0;
+    margin-top: 100px;
+    width: 60%;
+    font-size: 32px;
+    padding: 40px;
+  }
+
+  /*
+  .interactive {
+    height: 650px;
+    padding: 100px 150px;
+    position: relative;
+
+    img {
+      width: 65%;
+      max-height: 450px;
+    }
+
+    .interactive-text {
+      text-align: left;
+      position: absolute;
+      width: 40%;
+      right: 0;
+      bottom: 0;
+      background-color: white ;
+      padding: 100px 0 0 100px;
+      margin: 150px;
+
+      h2 {
+        font-size: 3em;
+        font-weight: 400;
+      }
+
+      p {
+        margin: 0;
+        margin-top: 25px;
+      }
+    }
+  }
+  */
+  .interactive {
+    height: 650px;
+    margin: 50px 150px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+  }
+  .interactive img {
+    width: 65%;
+    max-height: 500px;
+  }
+  .interactive .interactive-text {
+    position: absolute;
+    bottom: 0;
+    align-self: flex-end;
+    width: 50%;
+    text-align: left;
+    background-color: white;
+    padding: 80px 0 10px 80px;
+    margin: 70px 120px;
+    margin-right: 0;
+  }
+  .interactive .interactive-text h2 {
+    font-size: 3em;
+    font-weight: 400;
+  }
+  .interactive .interactive-text p {
+    margin: 0;
+    margin-top: 25px;
+  }
+
+  .creations-gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 100px 450px 450px;
+    margin: 50px 150px;
+  }
+  .creations-gallery h2 {
+    grid-area: 1/1/2/4;
+    font-size: 3em;
+  }
+  .creations-gallery a {
+    grid-area: 1/4;
+    justify-self: flex-end;
+    width: 180px;
+  }
+  .creations-gallery .creations-item {
+    height: 450px;
+    width: 100%;
+    margin: 10px;
+  }
+  .creations-gallery .creations-item .mobile-img {
+    display: none;
+  }
+  .creations-gallery .creations-item .desktop-img {
+    display: block;
+    padding: 10px;
+  }
+  .creations-gallery .creations-item p {
+    margin: 50px;
+  }
+
+  footer {
+    height: 200px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    padding: 50px 180px;
+    margin-top: 150px;
+  }
+  footer .social-media {
+    grid-area: 1/2;
+    justify-self: flex-end;
+  }
+  footer nav {
+    justify-self: flex-start;
+  }
+  footer nav ul {
+    display: inline-flex;
+  }
+  footer nav li {
+    margin-left: 0;
+  }
+  footer .footer-copyrigth {
+    justify-self: flex-end;
+    align-self: flex-end;
+    margin: 0;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
