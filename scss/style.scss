@@ -1,4 +1,5 @@
 @use 'modal';
+@use 'animations';
 @import url('https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap');
 
 * {
@@ -13,7 +14,7 @@ body {
 }
 
 header {
-  min-height: 650px; // Repetido
+  min-height: 650px; 
   background-image: url('../images/mobile/image-hero.jpg');
   background-size: cover;
   padding: 40px 30px; 
