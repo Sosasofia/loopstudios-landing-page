@@ -34,8 +34,10 @@ header {
 
   .title {
     border: 2px solid white;
-    margin-top: 50%;
+    margin-top: 150px;
     padding: 25px 20px;
+    max-width: 500px;
+    min-height: 150px;
 
     p {
       color: white;
