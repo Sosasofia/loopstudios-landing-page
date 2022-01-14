@@ -212,7 +212,8 @@ header .title p {
   text-transform: uppercase;
   text-decoration: none;
   letter-spacing: 2.5px;
-  margin: 50px;
+  margin-bottom: 50px;
+  margin-top: 20px;
 }
 .creations-gallery a:hover {
   cursor: pointer;
