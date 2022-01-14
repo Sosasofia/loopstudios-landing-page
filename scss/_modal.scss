@@ -14,15 +14,12 @@
   #menu {
     color: white;
     height: 100%;
-
-    ul {
-      list-style-type: none;
-      margin-top: 55%;
-    }
+    margin-top: 200px;
 
     li {
+      list-style-type: none;
       padding: 10px 0;
-      margin: 10px 0;
+      margin: 15px 0;
       font-size: 24px;
       letter-spacing: 2px;
       text-transform: uppercase;
@@ -37,7 +34,7 @@
           position: absolute;
           content: "";
           height: 2px;
-          bottom: -4px; 
+          bottom: -4px;
           margin: 0 auto;
           left: 0;
           width: 0;
