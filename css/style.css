@@ -419,6 +419,9 @@ footer .attribution a {
   footer nav li {
     margin-left: 0;
   }
+  footer nav:hover {
+    cursor: pointer;
+  }
   footer .footer-copyrigth {
     justify-self: end;
     margin: 0;

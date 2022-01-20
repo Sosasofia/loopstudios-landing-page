@@ -423,6 +423,10 @@ footer {
       li {
         margin-left: 0;
       }
+
+      &:hover {
+        cursor: pointer;
+      }
     }
 
     .footer-copyrigth {
